@@ -1,0 +1,92 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.header{
+	font-family: 'Inter', sans-serif;
+	font-weight: 600;
+	font-size: 22px;
+	grid-area: header;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.menu{
+	grid-area: menu;
+	justify-content: center;
+}
+
+.menu ul li {
+	margin: 0; padding: 0px;
+	border-bottom: 1px solid #CCC;
+	text-align: left;
+	list-style-type: none;
+}
+
+.menu a {
+	background: #F5F5F5;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 8px;
+	display: block;
+}
+
+.menu  a:hover {
+	background: #E5F0FF;
+	color: #039;
+}
+
+.post{
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+	width: 50vw;
+	word-wrap: normal;
+	text-align: justify;
+	grid-area: main;
+}
+
+.header-post{
+	display: flex;
+	flex-direction: column;
+	gap: 0.1rem;
+	font-family: "Inter", sans-serif;
+}
+
+p{
+	font-weight: 400;
+	font-size: 18px;
+	font-family: "Inter", sans-serif;
+}
+
+.header-post span{
+	font-weight: 200;
+	font-size: 12px;
+	text-indent: 1rem;
+}
+
+.footer{
+	text-align: center;
+	font-size: 12px;
+	font-weight: 100;
+	grid-area: footer;
+}
+
+.footer a{
+	text-decoration: none;
+	color: #32db2c;
+}
+
+.grid-container{
+ display: grid;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	grid-template-areas: 
+    'header header header header header header' 
+    'menu menu main main main main' 
+    'footer footer footer footer footer footer';
+	grid-row-gap: 3rem;
+	grid-column-gap: 5rem;
+}
